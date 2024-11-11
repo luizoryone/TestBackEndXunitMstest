@@ -13,7 +13,7 @@ namespace CalculatorMsTest
 
         }
 
-        public void MsTestMultiply(double fNumTimes, double sNumTimes)
+        public double MsTestMultiply(double fNumTimes, double sNumTimes)
         {
             return fNumTimes * sNumTimes;
         }
@@ -21,4 +21,5 @@ namespace CalculatorMsTest
 
     }
 }
-}
+
+
