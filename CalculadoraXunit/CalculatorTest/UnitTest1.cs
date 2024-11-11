@@ -7,8 +7,8 @@ public class UnitTest1
     public void MsTestAdd()
     {
         // Arrange
-        double fNumAdd = 10;
-        double sNumAdd = 20;
+        double fNumAdd = 37;
+        double sNumAdd = 13;
         double resultFplusS;
         Operacoes opAdd = new Operacoes();
 
@@ -16,15 +16,15 @@ public class UnitTest1
         resultFplusS = opAdd.MsTestAdd(fNumAdd, sNumAdd);
 
         // Assert - Verifica se o resultado previsto é igual ao resultado obtido
-        Assert.Equal(30, resultFplusS);
+        Assert.AreEqual(50, resultFplusS);
     }
 
     [TestMethod]
     public void MsTestMultiply()
     {
         // Arrange
-        double fNumAdd = 10;
-        double sNumAdd = 20;
+        double fNumAdd = 12;
+        double sNumAdd = 12;
         double resultFplusS;
         Operacoes opMultiply = new Operacoes();
 
@@ -32,6 +32,6 @@ public class UnitTest1
         resultFplusS = opMultiply.MsTestMultiply(fNumAdd, sNumAdd);
 
         // Assert - Verifica se o resultado previsto é igual ao resultado obtido
-        Assert.Equal(200, resultFplusS);
+        Assert.AreEqual(144, resultFplusS);
     }
 }
